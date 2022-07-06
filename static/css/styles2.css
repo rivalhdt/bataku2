@@ -6,11 +6,12 @@ body {
     background-color:#18223b;
     width: 100%;
     padding-top: 1em;
-    padding-bottom: -1em;
+    padding-bottom: -2em;
     padding-left: 1em;
     padding-right: 1em;
     margin-top:-3em;
     margin-left: -1em;
+    margin-bottom:1em;
 }
     
 h4 {
