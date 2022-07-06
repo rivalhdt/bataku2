@@ -25,7 +25,7 @@ SECRET_KEY = 'jcobym+tz8#0^o_fmm9p52t8-co*$q#+l)_9nu%-o_)_7=&gl2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'bataku2.herokuapp.com/']
 
 
 # Application definition
