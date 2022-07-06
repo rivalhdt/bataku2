@@ -1,0 +1,205 @@
+body {
+    font-family: Arial;
+    margin-left: 1em;
+  }
+  h4 {
+    margin-top: 0.3em;
+    color: black;
+    font-family: Arial;
+    font-size: 0.8em;
+    text-decoration: underline;
+  }
+  #hactive{
+    margin-top: 0.3em;
+    color: #ff5c24;
+    font-family: Arial;
+    font-size: 0.8em;
+    text-decoration: underline;
+  }
+  #harga2 {
+    margin-top: -2.5em;
+    color: black;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-family: Arial;
+  }
+  h1 {
+    font-family: "Titan One";
+    color: #ff5c24;
+    font-family: arial;
+  }
+  h5 {
+    font-size: 1.5em;
+    font-family: "Titan One";
+    color: #ff5c24;
+  }
+  button {
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #ff5c24;
+    color: white;
+    border: none;
+    font-family: "Titan One";
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #ff5c24;
+  }
+  
+  #icon {
+    width: 3em;
+  }
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0px;
+  }
+  .column1 {
+    float: left;
+    width: 30%;
+    padding: 0px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #back {
+    width: 3em;
+  }
+  input[type=text] {
+    width: 88%;
+    padding: 12px 45px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #18223b;
+    border-radius: 0.8em;
+  }
+  #icon2 {
+    width: 3.2em;
+    position: absolute;
+    margin-top: 0.3em;
+  }
+  
+  #icon3 {
+    width: 3.2em;
+    position: absolute;
+    margin-top: 0.7em;
+  }
+  #icon4 {
+    width: 3.2em;
+    position: absolute;
+    margin-top: 0.8em;
+  }
+  label {
+    font-size: 0.9em;
+    color: #18223b;
+    font-weight: bold;
+  }
+
+  #hitung {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background-color: #18223b;
+    border: 0.5em solid #aab5fe;
+  }
+  #hitung:HOVER {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    color: #18223b;
+    background-color: white;
+    border: 0.5em solid #aab5fe;
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+
+  .container{
+    background-color: #ff5c24;
+    width: 9.5em;
+    border-radius: 1em;
+    height: 10em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+  .container:hover{
+    transform: scale(1.1);
+  }.container2:hover{
+    transform: scale(1.1)
+  }.container3:hover{
+    transform: scale(1.1)
+  }.container4:hover{
+    transform: scale(1.1)
+  }
+  .container2{
+    background-color: #18223b;
+    width: 9.5em;
+    border-radius: 1em;
+    height: 10em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+  .container3{
+    background-color: #aab5fe;
+    width: 9.5em;
+    border-radius: 1em;
+    height: 10em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+  .container4{
+    background-color: #FDDE6C;
+    width: 9.5em;
+    border-radius: 1em;
+    height: 10em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+  .main{
+    width: 21em;
+    height: 25em;
+  }
+  #menu1{
+color: white;
+font-weight: bold;
+float: left;
+margin-left: 1em;
+margin-top: 0em;
+  }
+  #menu2{
+    font-size: 0.8em;
+    color: white;
+    float: left;
+    margin-left: 1.25em;
+    margin-top: -1em;
+      }
+
+    #lebihlengkap {
+    color: #18223b;
+    font-size: 0.8em;
+    opacity: 70%;
+    }
+    #cdetail{
+      display: none;
+      bottom: 0;
+      right: 15px;
+      z-index: 9;
+      margin-top: -1.75em;
+  }
+  .gambarmenu {
+    width: 6.5em;
+    margin-top: 0.5em;
+    border-radius: 50%;
+  }

@@ -1,0 +1,38 @@
+{%extends 'base2.html'%} {% load static %} {%block content%}
+<center>
+<div id="super">
+
+  <div class="title">
+    <a href="{% url 'menu:menu' %}"><h5>HITUNG BATA</h5></a>
+    <p id="harga2">Harga Dapat Diubah</p>
+   
+  </div>
+  <div class="main">
+    
+    <a href="{% url 'hitung:batamerah' %}">
+      <div class="container">
+      <img src="{%static 'images/batam.png'%}" alt="" class="gambarmenu">
+      <p id="menu1">Bata Merah</p><br>
+      <p id="menu2">Rp. 600</p>
+    </div>
+  </a>
+  <a href="{% url 'hitung:bataringan' %}">
+    <div class="container2">
+      <img src="{%static 'images/batar.png'%}" alt="" class="gambarmenu">
+      <p id="menu1">Bata Ringan</p><p id="menu2">Rp. 5.000</p></div>
+      </a>
+
+      <a href="{% url 'hitung:batako' %}">
+      <div class="container3"> <img src="{%static 'images/batak.png'%}" alt="" class="gambarmenu">
+      <p id="menu1">Batako&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p id="menu2">Rp. 2.500</p></div>
+    </a>
+
+    <div class="container4">
+      <img src="{%static 'images/panduan.png'%}" alt="" class="gambarmenu">
+      <p id="menu1">Panduan</p><p id="menu2"></p></div>
+  </div>
+
+</div>
+</center>
+{%endblock%}

@@ -1,0 +1,70 @@
+{%extends 'base2.html'%} {% load static %} {%block content%} <br /><br />
+<center>
+  <div class="row">
+    <div class="column">
+      <a href="{% url 'menu:menu' %}"><img src="{%static 'images/back.png'%}" alt="" id="back"></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:batako' %}"><h4>Batako</h4></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:batako' %}"><img src="{%static 'images/icon.png'%}" alt="" id="back"></a>
+      <br />
+    </div>
+  </div>
+  <br />
+
+  <label for="n1">Tinggi Bangunan</label><br />
+  <img src="{%static 'images/m.png'%}" alt="" id="icon2" />
+  <input type="text" id="n1" /><br /><br />
+
+  <label for="n2">Panjang Bangunan</label><br />
+  <img src="{%static 'images/m.png'%}" alt="" id="icon2" />
+  <input type="text" id="n2" /><br />
+
+  <p id="lebihlengkap" onclick="openForm();">Lebih Detail <b>&#8645;</b></p>
+
+  <div id="cdetail">
+    <p id="lebihlengkap" onclick="closeForm();">Lebih Detail <b>&#8645;</b></p>
+    <label for="n3">Harga per pcs (default = Rp. 2.500)</label><br />
+    <img src="{%static 'images/rp.png'%}" alt="" id="icon3" />
+    <input type="text" id="n3" /><br /><br />
+
+    <label for="n3">Bata per m2 (default = 11)</label><br />
+    <img src="{%static 'images/buah.png'%}" alt="" id="icon3" />
+    <input type="text" id="n4" /><br /><br />
+  </div>
+
+  <button onclick="calc();" id="hitung">HITUNG</button><br />
+  <br /><br />
+  <label>Jumlah buah bata</label><br />
+  <img src="{%static 'images/buah.png'%}" alt="" id="icon4" />
+  <input type="text" id="result" /><br /><br />
+  <label>Harga bata</label><br />
+
+  <img src="{%static 'images/rp.png'%}" alt="" id="icon3" />
+  <input type="text" id="harga" />
+</center>
+
+<script>
+  function openForm() {
+    document.getElementById("cdetail").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("cdetail").style.display = "none";
+  }
+
+  function calc() {
+    var n1 = parseFloat(document.getElementById("n1").value);
+    var n2 = parseFloat(document.getElementById("n2").value);
+    var n3 = parseFloat(document.getElementById("n3").value);
+    var n4 = parseFloat(document.getElementById("n4").value);
+
+    var result = (document.getElementById("result").value =
+      n1 * n2 * n4 || n1 * n2 * 11);
+    document.getElementById("harga").value = result * n3 || result * 2500;
+  }
+</script>
+{%endblock%}
