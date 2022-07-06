@@ -16,8 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from beranda.views import index
-from django.views.static import serve
-from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,7 +25,4 @@ urlpatterns = [
     path('hitung/', include('hitung.urls', namespace='hitung')),
     path('menu/', include('menu.urls', namespace='menu')),
     
-    urlpatterns = patterns('',
-    # ... the rest of your URLconf goes here ...
-) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
