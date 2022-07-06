@@ -2,7 +2,14 @@ body {
     font-family: Arial;
     margin-left: 1em;
   }
-  h4 {
+.navbar {
+    background-color:#18223b;
+    width: 100%;
+    padding: 1.35%;
+    margin-left: -2%;
+}
+    
+h4 {
     margin-top: 0.3em;
     color: black;
     font-family: Arial;
