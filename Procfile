@@ -1,1 +1,1 @@
-web: gunicorn bata2.wsgi --log-file -
+web: gunicorn bata.wsgi --log-file -
