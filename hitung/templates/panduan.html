@@ -1,0 +1,62 @@
+{%extends 'base2.html'%} {% load static %} {%block content%} <br /><br />
+<center>
+  <div class="row">
+    
+    <div class="column">
+      <a href="{% url 'hitung:batamerah' %}"><h4>Bata Merah</h4></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:bataringan' %}"
+        ><h4 id="hactive">Bata Ringan</h4></a
+      >
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:batako' %}"><h4>Batako</h4></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:panduan' %}"><h4>Panduan</h4></a>
+      <br />
+    </div>
+  </div>
+  <br />
+
+  <img src="{%static 'images/ukuran.png'%}" alt="" id="gambarutama"><br><br><br>
+
+  <label for="n1">Panjang Bata</label><br />
+  <img src="{%static 'images/cm.png'%}" alt="" id="icon2" />
+  <input type="text" id="n1" /><br /><br />
+
+  <label for="n2">Lebar Bata</label><br />
+  <img src="{%static 'images/cm.png'%}" alt="" id="icon2" />
+  <input type="text" id="n2" /><br /><br />
+
+  <label for="n3">Tinggi Bata</label><br />
+  <img src="{%static 'images/cm.png'%}" alt="" id="icon2" />
+  <input type="text" id="n3" /><br /><br />
+
+  <label for="n4">Spesi (Jarak)</label><br />
+  <img src="{%static 'images/cm.png'%}" alt="" id="icon2" />
+  <input type="text" id="n4" /><br /><br />
+
+  <button onclick="calc();" id="hitung">HITUNG</button><br />
+  <br /><br />
+  <label>Jumlah buah bata</label><br />
+  <img src="{%static 'images/buah.png'%}" alt="" id="icon4" />
+  <input type="text" id="result" /><br /><br />
+</center>
+
+<script>
+
+  function calc() {
+    var n1 = parseFloat(document.getElementById("n1").value);
+    var n2 = parseFloat(document.getElementById("n2").value);
+    var n3 = parseFloat(document.getElementById("n3").value);
+    var n4 = parseFloat(document.getElementById("n4").value);
+
+    var result = (document.getElementById("result").value = (10000/((n1)*(n3))||10000/((n1+n4)*(n3+n4))).toFixed(2));
+  }
+</script>
+{%endblock%}
