@@ -1,9 +1,10 @@
 {%extends 'base2.html'%} {% load static %} {%block content%} <br /><br />
 <center>
   
+   <div class="navbar">
   <div class="row">
     <div class="column">
-      <a href="{% url 'hitung:batamerah' %}"><h4>Bata Merah</h4></a>
+      <a href="{% url 'menu:menu' %}"><img src="{%static 'images/back.png'%}" alt="" id="back"></a>
       <br />
     </div>
     <div class="column">
@@ -11,10 +12,12 @@
       <br />
     </div>
     <div class="column">
-      <a href="{% url 'hitung:batako' %}"><h4 id="hactive">Batako</h4></a>
+      <a href="{% url 'hitung:batako' %}"><img src="{%static 'images/icon.png'%}" alt="" id="back"></a>
       <br />
     </div>
   </div>
+  </div>
+  <br />
   
   <br />
   <div style="text-align: left;">
