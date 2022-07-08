@@ -1,0 +1,31 @@
+{%extends 'base2.html'%} {% load static %} {%block content%} <br /><br />
+<center>
+  
+  <div class="row">
+    <div class="column">
+      <a href="{% url 'hitung:batamerah' %}"><h4>Bata Merah</h4></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:bataringan' %}"><h4>Bata Ringan</h4></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:batako' %}"><h4 id="hactive">Batako</h4></a>
+      <br />
+    </div>
+  </div>
+  
+  <br />
+  <div style="text-align: left;">
+    <p>**Harga bata hanya untuk patokan awal, harga <b>berbeda-beda</b> di setiap tempat.</p>
+  <h3 >Bata Merah</h3>
+  <p >1. Bata merah hias adalah Rp 1.200 per buah<br>2. Bata merah standar adalah Rp 725 per buah <br>3. Bata merah oven adalah Rp 900 per buah<br><a href="https://www.99.co/blog/indonesia/daftar-harga-batu-bata-merah/#:~:text=Dilihat%20dari%20tabel%20di%20atas,dan%20Rp900%20untuk%20yang%20oven.">&nbsp;&nbsp;&nbsp;&nbsp;Selengkapnya...</a></p>
+  <h3 >Bata Ringan</h3>
+  <p >1. Bata ringan terbaik adalah Rp 9.000 per buah<br>2. Bata ringan grade A+ adalah Rp 6.500 per buah <br>3. Bata ringan grade A adalah Rp 5.000 per buah<br><a href="https://www.99.co/blog/indonesia/harga-hebel-terbaru/">&nbsp;&nbsp;&nbsp;&nbsp;Selengkapnya...</a></p>
+  <h3 >Batako</h3>
+  <p >1. Batako press adalah Rp 1.500 per buah<br>2. Batako hitam press adalah Rp 1.750 per buah <br><a href="https://www.lamudi.co.id/journal/harga-batako/">&nbsp;&nbsp;&nbsp;&nbsp;Selengkapnya...</a></p>
+    </div>
+</center>
+</script>
+{%endblock%}
