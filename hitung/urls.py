@@ -7,4 +7,5 @@ urlpatterns = [
     path('bataringan', bataringan, name='bataringan'),
     path('batako', batako, name='batako'),
     path('panduan', panduan, name='panduan'),
+    path('harga', harga, name='harga'),
 ]
