@@ -7,17 +7,20 @@
       <br />
     </div>
     <div class="column">
-      <a href="{% url 'hitung:bataringan' %}"><h4>Panduan</h4></a>
+     <h4>Panduan</h4>
       <br />
     </div>
     <div class="column">
-      <a href="{% url 'hitung:batako' %}"><img src="{%static 'images/icon.png'%}" alt="" id="back"></a>
+     <img src="{%static 'images/icon.png'%}" alt="" id="back">
       <br />
     </div>
   </div>
   </div>
   <br />
+    <h3>Panduan Menghitung Bata</h3>
     <img src="{%static 'images/panduan1.gif'%}" alt="" id="gif"><br>
     <img src="{%static 'images/panduan2.gif'%}" alt="" id="gif2" style="margin-left:1.5em ;margin-top: -0.3em;">
+    
+    <a href="{% url 'hitung:batamerah' %}">Klik untuk mencoba..</a>
 </center>
 {%endblock%}
