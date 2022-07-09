@@ -65,7 +65,7 @@ function closeForm() {
     var n3 = parseFloat(document.getElementById("n3").value);
     var n4 = parseFloat(document.getElementById("n4").value);
 
-    var result = (document.getElementById("result").value = (n1*n2*n4 || n1 * n2 * 63).toFixed(2));
+    var result = (document.getElementById("result").value = (n1*n2*n4 || n1 * n2 * 63).toFixed(0));
     document.getElementById("harga").value = result * n3 || result * 600 ;
   }
 </script>
