@@ -1,5 +1,22 @@
 {%extends 'base2.html'%} {% load static %} {%block content%} <br /><br />
 <center>
+    <div class="navbar">
+  <div class="row">
+    <div class="column">
+      <a href="{% url 'menu:menu' %}"><img src="{%static 'images/back.png'%}" alt="" id="back"></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:bataringan' %}"><h4>Panduan</h4></a>
+      <br />
+    </div>
+    <div class="column">
+      <a href="{% url 'hitung:batako' %}"><img src="{%static 'images/icon.png'%}" alt="" id="back"></a>
+      <br />
+    </div>
+  </div>
+  </div>
+  <br />
     <img src="{%static 'images/panduan1.gif'%}" alt="" id="gif"><br>
     <img src="{%static 'images/panduan2.gif'%}" alt="" id="gif2" style="margin-left:1.5em ;margin-top: -0.3em;">
 </center>
