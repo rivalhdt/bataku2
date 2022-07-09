@@ -8,4 +8,5 @@ urlpatterns = [
     path('batako', batako, name='batako'),
     path('panduan', panduan, name='panduan'),
     path('harga', harga, name='harga'),
+    path('panduan2', panduan2, name='panduan2'),
 ]
