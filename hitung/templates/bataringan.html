@@ -65,7 +65,7 @@
     var n4 = parseFloat(document.getElementById("n4").value);
 
     var result = (document.getElementById("result").value =
-      (n1 * n2 * n4 || n1 * n2 * 8.3).toFixed(2));
+      (n1 * n2 * n4 || n1 * n2 * 8.3).toFixed(0));
     document.getElementById("harga").value = result * n3 || result * 5000;
   }
 </script>
