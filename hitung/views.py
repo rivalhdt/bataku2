@@ -21,6 +21,9 @@ def batako(request):
 def panduan(request):
 
     return render(request, 'panduan.html')
+def panduan2(request):
+
+    return render(request, 'panduan2.html')
 
 def harga(request):
 
