@@ -3,5 +3,6 @@ from . views import *
 app_name = 'menu'
 
 urlpatterns = [
-    path('', menu, name='menu'),
+    path('', splash, name='splash'),
+    path('menu/', menu, name='menu'),
 ]
