@@ -30,11 +30,11 @@
   
   <div id="cdetail" >
     <p id="lebihlengkap"onclick="closeForm();">Lebih Detail <b>&#8645;</b></p>
-    <label for="n3">Harga per pcs (default = Rp. 600)</label><br />
+    <label for="n3">Harga per pcs (default = Rp. 700)</label><br />
     <img src="{%static 'images/rp.png'%}" alt="" id="icon3" />
     <input type="text" id="n3" /><br /><br />
 
-    <label for="n3">Bata per m2 (default = 63)</label><br />
+    <label for="n3">Bata per m2 (default = 65)</label><br />
     <img src="{%static 'images/buah.png'%}" alt="" id="icon3" />
     <input type="text" id="n4" /><br /><br />
 
@@ -65,8 +65,8 @@ function closeForm() {
     var n3 = parseFloat(document.getElementById("n3").value);
     var n4 = parseFloat(document.getElementById("n4").value);
 
-    var result = (document.getElementById("result").value = (n1*n2*n4 || n1 * n2 * 63).toFixed(0));
-    document.getElementById("harga").value = result * n3 || result * 600 ;
+    var result = (document.getElementById("result").value = (n1*n2*n4 || n1 * n2 * 65).toFixed(0));
+    document.getElementById("harga").value = result * n3 || result * 700 ;
   }
 </script>
 {%endblock%}
