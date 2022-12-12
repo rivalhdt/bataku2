@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'jcobym+tz8#0^o_fmm9p52t8-co*$q#+l)_9nu%-o_)_7=&gl2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['bataku2.herokuapp.com','hitungbata.herokuapp.com', 'http://aldy.pythonanywhere.com']
+ALLOWED_HOSTS = ['bataku2.herokuapp.com','hitungbata.herokuapp.com', 'aldy.pythonanywhere.com', 'bataku2.vercel.app']
 
 
 # Application definition
