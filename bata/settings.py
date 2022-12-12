@@ -25,7 +25,7 @@ SECRET_KEY = 'jcobym+tz8#0^o_fmm9p52t8-co*$q#+l)_9nu%-o_)_7=&gl2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bataku2.herokuapp.com','hitungbata.herokuapp.com', 'aldy.pythonanywhere.com', 'bataku2.vercel.app', 'bataku2-rivalhdt.vercel.app']
+ALLOWED_HOSTS = ['bataku2.herokuapp.com','hitungbata.herokuapp.com', 'aldy.pythonanywhere.com', 'bataku2.vercel.app', 'bataku2-rivalhdt.vercel.app', '.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -119,6 +119,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+import os
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "BASE_DIR/static/"
